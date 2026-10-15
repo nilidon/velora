@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #fcfaf8;
+  --cream-deep: #f6f0e8;
+  --ink: #261d17;
+  --ink-soft: #70645c;
+  --gold: #c09a59;
+  --gold-deep: #a07d3e;
+  --gold-soft: #d4b896;
+  --night: #1a1612;
+  --night-2: #241f1a;
+  --card: #ffffff;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-cream-deep: var(--cream-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-gold-soft: var(--gold-soft);
+  --color-night: var(--night);
+  --color-night-2: var(--night-2);
+  --color-card: var(--card);
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+  --font-script: var(--font-cormorant);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.font-serif {
+  font-family: var(--font-playfair), "Playfair Display", Georgia, serif;
+}
+
+.font-script {
+  font-family: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+}
+
+.shadow-soft {
+  box-shadow: 0 12px 40px rgba(38, 29, 23, 0.07);
+}
+
+.shadow-card {
+  box-shadow: 0 22px 55px rgba(38, 29, 23, 0.12);
+}
+
+.gold-rule {
+  width: 56px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: var(--gold);
+  color: #fff;
+  font-weight: 500;
+  padding: 16px 36px;
+  transition: background 200ms ease, transform 200ms ease;
+}
+
+.btn-gold:hover {
+  background: var(--gold-deep);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+  font-weight: 500;
+  padding: 16px 36px;
+  background: transparent;
+  transition: background 200ms ease, color 200ms ease;
+}
+
+.btn-ghost:hover {
+  background: rgba(192, 154, 89, 0.08);
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

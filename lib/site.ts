@@ -1,0 +1,33 @@
+export const site = {
+  name: "Velora Cleaning Services",
+  shortName: "Velora",
+  tagline: "Spotless spaces, exceptional care",
+  legalName: "Velora Cleaning Services LLC",
+  phone: "(718) 887-1649",
+  phoneHref: "tel:+17188871649",
+  smsHref: "sms:+17188871649",
+  email: "hello@veloracleaningstatenisland.com",
+  address: "3891 Amboy Rd, Staten Island, NY 10308",
+  mapsUrl: "https://share.google/5ZM42DMwtUEigvJ43",
+  googleReviews: "https://share.google/5ZM42DMwtUEigvJ43",
+  instagram: "https://www.instagram.com/veloracleaningservicesnyc/",
+  facebook: "https://www.facebook.com/profile.php?id=61576490109238",
+  hours: "Open 24/7",
+  rating: "5.0",
+  reviewCount: 47,
+  clients: "500+",
+  jobs: "2,000+",
+};
+
+export const neighborhoods = [
+  "St. George",
+  "Stapleton",
+  "New Dorp",
+  "Great Kills",
+  "Tottenville",
+  "Todt Hill",
+  "Annadale",
+  "Eltingville",
+  "West Brighton",
+  "South Beach",
+];
